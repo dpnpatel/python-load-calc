@@ -17,12 +17,6 @@ Prerequisites
 - Python 3.10+ recommended
 - Required packages: numpy, pandas, matplotlib, openpyxl
 
-Quick setup (PowerShell)
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
 
 Running the tools
 - Run the main analysis and show plots:
