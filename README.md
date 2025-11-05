@@ -6,8 +6,8 @@ and visualize the free-body diagram, shear, and bending moment. It is still unde
 
 The primary scripts are:
 
-- `loadcalc.py` — main analysis and plotting (reads `beam_loads.xlsx`).
-- `list_forces.py` — lists all point loads and sign convention for quick review.
+- `loadcalc.py` - main analysis and plotting (reads `beam_loads.xlsx`).
+- `list_forces.py` - lists all point loads and sign convention for quick review.
 
 Key points
 - Units: USCS (inches, lbf, lbf·in, psi).
@@ -37,15 +37,15 @@ python list_forces.py
 
 Input data (`beam_loads.xlsx`)
 - `loads` sheet (required):
-  - `position_in` — location along shaft measured from left end (in)
-  - `load_lbf` — point load in lbf (use negative values for downward loads)
+  - `position_in` - location along shaft measured from left end (in)
+  - `load_lbf` - point load in lbf (use negative values for downward loads)
 
 - `params` sheet (recommended): a single-row table with any of these columns:
-  - `L_in` — total shaft/beam length in inches (required)
-  - `shaft_weight_lbf` — shaft weight (scalar). The scripts will append this as a downward point load at `L_in/2` if present.
-  - `min_RA_in` or `min_RA_from_center_in` — minimum allowed position for Bearing A (in)
-  - `min_sep_in` — minimum separation between Bearing A and B (in)
-  - `shaft_dia_in` — shaft diameter (in) for solid-shaft stress check
+  - `L_in` - total shaft/beam length in inches (required)
+  - `shaft_weight_lbf` - shaft weight (scalar). The scripts will append this as a downward point load at `L_in/2` if present.
+  - `min_RA_in` or `min_RA_from_center_in` - minimum allowed position for Bearing A (in)
+  - `min_sep_in` - minimum separation between Bearing A and B (in)
+  - `shaft_dia_in` - shaft diameter (in) for solid-shaft stress check
 
 Notes and conventions
 - Bearings are placed on the right half of the shaft by default (per project requirements).
